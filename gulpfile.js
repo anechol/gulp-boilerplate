@@ -42,7 +42,7 @@ gulp.task('sass', function () {
 gulp.task('auto', function() {
 	return gulp.src('app/*.css')
 		.pipe(autoprefixer({
-			browers: ['last 2 versions'],
+			browsers: ['last 2 versions'],
 			cascade: false
 		}))
 		.pipe(gulp.dest('app/css'));
